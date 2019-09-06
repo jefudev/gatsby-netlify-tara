@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: jef-lau/gatsby-netlify-tara
+  name: git-gateway
 
 media_folder: static/assets
 public_folder: assets
