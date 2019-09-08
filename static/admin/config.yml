@@ -1,5 +1,10 @@
 backend:
-  name: git-gateway
+  # local testing
+  name: github
+  repo: jef-lau/gatsby-netlify-tara
+  
+  # production
+  # name: git-gateway
 
 media_folder: static/assets
 public_folder: assets
@@ -15,3 +20,4 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Intro text, name: intro, widget: text}
           - {label: Image, name: image, widget: image}
+        delete: false
