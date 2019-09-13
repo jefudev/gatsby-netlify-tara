@@ -8,7 +8,7 @@ import {
   } from 'semantic-ui-react'
   import 'semantic-ui-less/semantic.less'
 
-const Footer = () => (
+const HomepageFooter = () => (
 <Segment inverted vertical style={{ padding: '5em 0em' }}>
     <Container>
         <Grid divided inverted stackable>
@@ -42,7 +42,7 @@ const Footer = () => (
             </Grid.Row>
         </Grid>
     </Container>
-</Segment>   
+</Segment>
 )
 
-export default Footer
+export default HomepageFooter

@@ -15,8 +15,8 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import '../styles/main.css'
 
-import SEO from "../components/SEO"
-import Layout from "../layouts/Layout"
+import SEOComponent from "../components/SEOComponent"
+import HomepageLayout from "../layouts/HomepageLayout"
 import Hero from '../components/homepage/Hero'
 import BookSegment from '../components/homepage/BookSegment'
 import MediaSegment from '../components/homepage/MediaSegment'
@@ -29,11 +29,11 @@ import ContactSegment from '../components/homepage/ContactSegment'
 const IndexPage = (props) => {
   const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
   return(
-    <Layout>
+    <HomepageLayout>
       <Helmet>
         <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Lato:400,700&display=swap" rel="stylesheet" />
       </Helmet>
-      <SEO title="Home" />
+      <SEOComponent title="Home" />
       <Hero />
       <BookSegment />
       <MediaSegment />
@@ -133,18 +133,7 @@ const IndexPage = (props) => {
           </Button>
           </Container>
       </Segment>
-
-
-
-{/*
-      <h1>{data.title}</h1>
-      <h1>{data.intro}</h1>
-      <h1>{data.image}</h1>
-      <Image src={data.image} /> */}
-    </Layout>
-    //   <Hero />
-    //   <MainContainer />
-    // </Layout>
+    </HomepageLayout>
   )
 }
 

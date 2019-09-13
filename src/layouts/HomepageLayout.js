@@ -5,9 +5,9 @@ import 'semantic-ui-less/semantic.less'
 
 import ResponsiveContainer from '../components/ResponsiveContainer'
 import "../styles/main.css"
-import Footer from '../components/Footer'
+import HomepageFooter from '../components/HomepageFooter'
 
-const Layout = ({ children }) => {
+const HomepageLayout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -22,13 +22,13 @@ const Layout = ({ children }) => {
       <ResponsiveContainer siteTitle={data.site.siteMetadata.title}>
         <main className='layoutBackground'>{children}</main>
       </ResponsiveContainer>
-      <Footer />
+      <HomepageFooter />
     </>
-  )  
+  )
 }
 
-Layout.propTypes = {
+HomepageLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default HomepageLayout
