@@ -1,4 +1,15 @@
 /*******************************
      User Global Variables
 *******************************/
-@fontName: 'Comic Sans MS';
+@fontName: 'Lato';
+@emSize: 21px;
+@fontSize: 21px;
+
+@primaryColor        : #fbaf08;
+@secondaryColor      : @black;
+@pink: #FEA49F;
+@blue: #101357;
+@grey: #f2f2f2;
+@yellow: #fbaf08;
+
+@huge       : 4rem;

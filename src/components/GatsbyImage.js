@@ -14,7 +14,7 @@ import Img from "gatsby-image"
  */
 
 
-const Image = (props) => (
+const GatsbyImage = (props) => (
   <StaticQuery
     query={graphql`
       query {
@@ -36,6 +36,7 @@ const Image = (props) => (
 
     render={(data) => {
       const image = data.images.edges.find(n => {
+        console.log("return null");
         return n.node.relativePath.includes(props.filename);
       });
       if (!image) { return null; }
@@ -51,4 +52,4 @@ const Image = (props) => (
   />
 )
 
-export default Image
+export default GatsbyImage

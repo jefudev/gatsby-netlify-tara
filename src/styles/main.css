@@ -1,0 +1,129 @@
+p {
+    margin: 1em;
+}
+/*
+ * ─── HOMEPAGE ───────────────────────────────────────────────────────────────────
+ */
+.hero__img--container .Typewriter {
+    position: absolute;
+    color: #FFF;
+    padding: 50px 0 0 40px;
+    font-family: 'Domine', sans-serif;
+    font-size: 3em;
+    line-height: 1.5em;
+}
+.hero__img--container .Typewriter .typewriter__name {
+    font-size: 1.4em;
+    line-height: 1.3em;
+}
+.layoutBackground {
+    background-color: #ffffff;
+    background-image: url("../images/subtle-grey.png");
+}
+.hero__img--container {
+    max-width: 1400px;
+    max-height: 770px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#hero__img {
+    background-image:
+    linear-gradient(90deg, rgba(16,19,87,1) 0%, rgba(16,19,87,1) 30%, rgba(16,19,87,0) 25%),
+    url('../images/homepage-hero.jpg');
+    width: 130%;
+    background-position: 0 -120px;
+    height: 770px;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.social__icons {
+    color: #fbaf08;
+}
+.social__icons:hover {
+    color: #ffc61c;
+}
+.ui.stacked.segment.book-segment{
+    min-height: 500px;
+}
+div.book__content{
+    margin-top: -250px;
+    margin-bottom: 50px;
+}
+.segmentHeaderTitle--black {
+    font-size: 4em;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.ui.header.segmentHeaderTitle {
+    font-size: 2em;
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.segment__header {
+    z-index: 1;
+}
+a.ui.label.segment__header {
+    cursor: default;
+}
+.book__container .slick-prev:before, .book__container .slick-next:before {
+    color: #000;
+}
+.book__container .slick-prev{
+    left: 0;
+}
+.book__container .slick-next{
+    right: 0;
+}
+.book {
+    padding: 10px;
+    margin: 0 auto;
+}
+.media__segment.ui.vertical.segment {
+    border-top: 1px solid rgba(34, 36, 38, 0.15);
+    padding: 0;
+}
+.media__grid.ui[class*="internally celled"].grid {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.logo__grid {
+
+}
+.logo {
+}
+.ui.celled.grid > .row > .column.phil__hero-img-col {
+    padding: 0;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+.ui.celled.grid > .row > .column.phil__hero-img-col:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../images/noise-pattern-with-subtle-cross-lines.png") repeat top left;
+    opacity: .8;
+  }
+.phil__hero-img.ui.fluid.image {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    margin: auto;
+}
+.phil__segment-header {
+}
+.gallery-segment.ui.stacked.segment {
+    margin: 2em 0;
+}
+.height100 {
+    height: 100%;
+}
+/* ──────────────────────────────────────────────────────────────────────────────── */

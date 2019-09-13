@@ -6,7 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "gatsby": "^2.13.73",
-    "gatsby-cli": "^2.7.44",
+    "gatsby-cli": "^2.7.45",
     "gatsby-image": "^2.2.10",
     "gatsby-plugin-less": "^3.0.5",
     "gatsby-plugin-manifest": "^2.2.6",
@@ -23,8 +23,12 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
+    "react-responsive-carousel": "^3.1.50",
+    "react-slick": "^0.25.2",
     "semantic-ui-less": "^2.4.1",
-    "semantic-ui-react": "^0.88.0"
+    "semantic-ui-react": "^0.88.0",
+    "slick-carousel": "^1.8.1",
+    "typewriter-effect": "^2.10.0"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
