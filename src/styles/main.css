@@ -4,13 +4,31 @@ p {
 /*
  * ─── HOMEPAGE ───────────────────────────────────────────────────────────────────
  */
-.hero__img--container .Typewriter {
+.hero__img--container .hero__about {
     position: absolute;
     color: #FFF;
     padding: 50px 0 0 40px;
-    font-family: 'Domine', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
     font-size: 3em;
+    line-height: 1em;
+}
+.hero__img--container .hero__name {
+    color: #FFF;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1.5em;
+    line-height: 1em;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 25px;
+}
+.hero__img--container .hero__titles {
+    color: #FFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: .4em;
     line-height: 1.5em;
+    text-transform: uppercase;
+    display: block;
+    max-width: 300px;
 }
 .hero__img--container .Typewriter .typewriter__name {
     font-size: 1.4em;
@@ -40,6 +58,9 @@ p {
 .social__icons {
     color: #fbaf08;
 }
+.social__icons i.link.icon, i.link.icons {
+    opacity: 1;
+}
 .social__icons:hover {
     color: #ffc61c;
 }
@@ -53,13 +74,13 @@ div.book__content{
 .segmentHeaderTitle--black {
     font-size: 4em;
     color: #000;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
 }
 .ui.header.segmentHeaderTitle {
     font-size: 2em;
     color: #FFF;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
 }
 .segment__header {
@@ -67,6 +88,16 @@ div.book__content{
 }
 a.ui.label.segment__header {
     cursor: default;
+    text-align: left;
+    display: table;
+}
+a.ui.label.segment__header--padding-bottom {
+    margin-bottom: 25px;
+}
+a.ui.label.segment__header--half {
+    position: absolute;
+    top: 0;
+    margin-top: 25px;
 }
 .book__container .slick-prev:before, .book__container .slick-next:before {
     color: #000;
@@ -80,6 +111,11 @@ a.ui.label.segment__header {
 .book {
     padding: 10px;
     margin: 0 auto;
+    max-width: 200px;
+    max-height: 300px;
+    height: 100%;
+    box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+    border: 1px solid rgba(34, 36, 38, 0.15);
 }
 .media__segment.ui.vertical.segment {
     border-top: 1px solid rgba(34, 36, 38, 0.15);
@@ -89,16 +125,21 @@ a.ui.label.segment__header {
     max-width: 1600px;
     margin: 0 auto;
 }
-.logo__grid {
-
+.ui.centered.grid.logo__grid {
+    margin: 0 auto;
+    max-width: 800px;
 }
-.logo {
+.react-reveal > .ui.grid > .row > .column > img.logo  {
+    max-width: 150px;
+    margin: 0 auto;
+    display: block;
 }
 .ui.celled.grid > .row > .column.phil__hero-img-col {
     padding: 0;
     height: 600px;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 }
 .ui.celled.grid > .row > .column.phil__hero-img-col:after {
     content: '';
@@ -107,9 +148,21 @@ a.ui.label.segment__header {
     right: 0;
     bottom: 0;
     left: 0;
-    background: url("../images/noise-pattern-with-subtle-cross-lines.png") repeat top left;
+    background: url("../images/worn-dots.png") repeat top left;
     opacity: .8;
-  }
+    mix-blend-mode: multiply;
+    background-color: #101357;
+    background-blend-mode: color-burn;
+    -webkit-transition: 1s; /* Safari prior 6.1 */
+    transition: 1s;
+}
+.ui.celled.grid > .row > .column.phil__hero-img-col:hover:after{
+    opacity: 0;
+}
+.ui.celled.grid > .row > .column.phil__hero-img-col:hover .overlay-text{
+    color: #101357;
+    mix-blend-mode: hard-light;
+}
 .phil__hero-img.ui.fluid.image {
     position: absolute;
     top: -100%;
@@ -125,5 +178,28 @@ a.ui.label.segment__header {
 }
 .height100 {
     height: 100%;
+}
+.segment--table {
+    display: table;
+}
+.segment__items--centered {
+    display: table-cell;
+    vertical-align: middle;
+}
+.overlay-text{
+    position: absolute;
+    color: #FFF;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 7em;
+    line-height: 1.2em;
+    z-index: 1;
+    margin: .2em;
+    -webkit-transition: 1s; /* Safari prior 6.1 */
+    transition: 1s;
+    padding: 0 15px 0 25px;
+}
+.overlay-text--align-right {
+    right: 0;
+    text-align: right;
 }
 /* ──────────────────────────────────────────────────────────────────────────────── */
