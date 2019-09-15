@@ -10,12 +10,12 @@ import 'semantic-ui-less/semantic.less'
 import Fade from 'react-reveal/Fade';
 
 const PhilanthropySegment = () => (
-<Segment style={{ padding: '0em' }} vertical>
+<Segment style={{ padding: '0em' }} vertical name="phil__link">
   <Grid celled='internally' columns='equal' stackable>
     <Grid.Row textAlign='center'>
         <Grid.Column className='phil__hero-img-col'>
           <Image fluid className='phil__hero-img' src={require("../../images/phil-hero.jpeg")} />
-          <Fade delay={500} fraction={.7}>
+          <Fade delay={500} fraction={.4}>
             <p className='overlay-text overlay-text--align-right'>
               Giving<br/>
               Back

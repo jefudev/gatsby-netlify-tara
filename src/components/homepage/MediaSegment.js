@@ -13,7 +13,7 @@ import Fade from 'react-reveal/Fade';
 const MediaSegment = () => (
 
 
-<Segment style={{ padding: '0em' }} vertical className='media__segment'>
+<Segment style={{ padding: '0em' }} vertical className='media__segment' name='media__link'>
   <Grid celled='internally' columns='equal' stackable>
     <Grid.Row textAlign='center'>
         <Grid.Column>
@@ -24,7 +24,7 @@ const MediaSegment = () => (
                     Media Appearances
                   </Header>
                 </Label>
-                <Fade delay={700} fraction={.7}>
+                <Fade delay={700} fraction={.4}>
                 <Grid columns='equal' className="logo__grid" verticalAlign='middle' centered stackable>
                   <Grid.Row>
                     <Grid.Column>
@@ -57,8 +57,8 @@ const MediaSegment = () => (
           </Segment>
         </Grid.Column>
         <Grid.Column className='phil__hero-img-col'>
-          <Image fluid className='phil__hero-img' src="https://picsum.photos/3000/3000" />
-          <Fade delay={500} fraction={.7}>
+          <Image fluid className='phil__hero-img' src={require("../../images/news-hero.jpg")}/>
+          <Fade delay={500} fraction={.4}>
           <div className='overlay-text'>
             In the<br/>
             News

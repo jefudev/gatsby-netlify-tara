@@ -1,8 +1,8 @@
 import React from "react"
 
 const AboutSegment = () => (
-  <div>
-    
+  <div name='about__link'>
+
   </div>
 )
 

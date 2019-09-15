@@ -10,6 +10,12 @@ import {
 } from 'semantic-ui-react'
 import 'semantic-ui-less/semantic.less'
 import getWidth from './getWidth'
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
+const durationFn = function(deltaTop) {
+    return deltaTop;
+};
 
 /* Heads up!
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
@@ -21,7 +27,8 @@ class DesktopContainer extends Component {
     hideFixedMenu = () => this.setState({ fixed: false })
     showFixedMenu = () => this.setState({ fixed: true })
 
-    render() {
+
+    render () {
         const { children } = this.props
         const { fixed } = this.state
 
@@ -46,18 +53,15 @@ class DesktopContainer extends Component {
                 size='large'
                 >
                 <Container>
-                    <Menu.Item as='a' active>Books</Menu.Item>
-                    <Menu.Item as='a'>Media</Menu.Item>
-                    <Menu.Item as='a'>Philanthropy</Menu.Item>
-                    <Menu.Item as='a'>Gallery</Menu.Item>
-                    <Menu.Item as='a'>About</Menu.Item>
-                    <Menu.Item as='a'>Publishing in Paradise</Menu.Item>
+                    <Menu.Item as='a'><Link activeClass="active" className="books__link" to="books__link" spy={true} smooth={true} duration={500}>Books</Link></Menu.Item>
+                    <Menu.Item as='a'><Link activeClass="active" className="media__link" to="media__link" spy={true} smooth={true} duration={500}>Media</Link></Menu.Item>
+                    <Menu.Item as='a'><Link activeClass="active" className="phil__link" to="phil__link" spy={true} smooth={true} duration={500}>Philanthropy</Link></Menu.Item>
+                    <Menu.Item as='a'><Link activeClass="active" className="gallery__link" to="gallery__link" spy={true} smooth={true} duration={500}>Gallery</Link></Menu.Item>
+                    <Menu.Item as='a'><Link activeClass="active" className="about__link" to="about__link" spy={true} smooth={true} duration={500}>About</Link></Menu.Item>
+                    <Menu.Item as='a'><Link activeClass="active" className="pip__link" to="pip__link" spy={true} smooth={true} duration={500}>Publishing in Paradise</Link></Menu.Item>
                     <Menu.Item position='right'>
-                    {/* <Button as='a' inverted={!fixed}>
-                        Log in
-                    </Button> */}
                     <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
-                        Say Hello!
+                        <Link className="contact__link" to="contact__link" spy={true} smooth={true} duration={500}>Say Hello!</Link>
                     </Button>
                     </Menu.Item>
                 </Container>
@@ -70,7 +74,7 @@ class DesktopContainer extends Component {
         )
     }
 }
-  
+
 DesktopContainer.propTypes = {
     children: PropTypes.node,
 }

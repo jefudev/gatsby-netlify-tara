@@ -37,6 +37,7 @@ p {
 .layoutBackground {
     background-color: #ffffff;
     background-image: url("../images/subtle-grey.png");
+    margin-bottom: -40px;
 }
 .hero__img--container {
     max-width: 1400px;
@@ -139,7 +140,7 @@ a.ui.label.segment__header--half {
     height: 600px;
     overflow: hidden;
     position: relative;
-    cursor: pointer;
+    cursor: default;
 }
 .ui.celled.grid > .row > .column.phil__hero-img-col:after {
     content: '';
@@ -153,8 +154,8 @@ a.ui.label.segment__header--half {
     mix-blend-mode: multiply;
     background-color: #101357;
     background-blend-mode: color-burn;
-    -webkit-transition: 1s; /* Safari prior 6.1 */
-    transition: 1s;
+    -webkit-transition: .3s; /* Safari prior 6.1 */
+    transition: .3s;
 }
 .ui.celled.grid > .row > .column.phil__hero-img-col:hover:after{
     opacity: 0;
@@ -170,6 +171,9 @@ a.ui.label.segment__header--half {
     right: 0;
     bottom: -100%;
     margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .phil__segment-header {
 }
@@ -194,8 +198,8 @@ a.ui.label.segment__header--half {
     line-height: 1.2em;
     z-index: 1;
     margin: .2em;
-    -webkit-transition: 1s; /* Safari prior 6.1 */
-    transition: 1s;
+    -webkit-transition: .3s; /* Safari prior 6.1 */
+    transition: .3s;
     padding: 0 15px 0 25px;
 }
 .overlay-text--align-right {

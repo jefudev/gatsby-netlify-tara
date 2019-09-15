@@ -1,8 +1,8 @@
 import React from "react"
 
 const PublishingInParadiseSegment = () => (
-  <div>
-    
+  <div name='pip__link'>
+
   </div>
 )
 

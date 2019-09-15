@@ -17,7 +17,7 @@ const HomepageFooter = () => (
                     Copyright &copy; {new Date().getFullYear()}
                 </Grid.Column>
                 <Grid.Column floated='right' textAlign='right' width={8}>
-                    Designed with <span style={{color: '#e25555'}}>&#9829;</span> by <a href='https://www.speculativeweb.com/' target='_blank'><span style={{color: '#FFF'}}>SpeculativeWEB</span></a>
+                    Designed with <span style={{color: '#e25555'}}>&#9829;</span> by <a href='https://www.speculativeweb.com/' target='_blank'><span style={{color: '#FFF'}}><strong>SpeculativeWEB</strong></span></a>
                 </Grid.Column>
             </Grid.Row>
         </Grid>

@@ -1,8 +1,8 @@
 import React from "react"
 
 const ContactSegment = () => (
-  <div>
-    
+  <div name='contact__link'>
+
   </div>
 )
 

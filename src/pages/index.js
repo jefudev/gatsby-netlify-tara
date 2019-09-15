@@ -37,7 +37,7 @@ const IndexPage = (props) => {
       <Hero />
       <BookSegment />
       <MediaSegment />
-      <PhilanthropySegment />
+      <PhilanthropySegment/>
       <GallerySegment/>
       <AboutSegment />
       <PublishingInParadiseSegment />

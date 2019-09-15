@@ -21,7 +21,7 @@ const settings = {
 };
 
 const BookSegment = () => (
-  <Container className='book__content'>
+  <Container className='book__content' name='books__link'>
     <a href='https://www.facebook.com' target='_blank' class='social__icons'><Icon name='facebook square' size='big' link/></a>
     <a href='https://www.linkedin.com' target='_blank' class='social__icons'><Icon name='linkedin' size='big' link/></a>
     <a href='https://www.twitter.com' target='_blank' class='social__icons'><Icon name='twitter square' size='big' link/></a>
@@ -29,7 +29,7 @@ const BookSegment = () => (
     <Segment className="book-segment" stacked >
       <Label color='pink' as='a' className="segment__header">
         <Header className="segmentHeaderTitle" as="span">
-          Books
+          Bestselling Author
         </Header>
       </Label>
       <p>
