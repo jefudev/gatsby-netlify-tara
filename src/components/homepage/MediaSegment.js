@@ -24,7 +24,7 @@ const MediaSegment = () => (
                     Media Appearances
                   </Header>
                 </Label>
-                <Fade delay={700} fraction={.4}>
+                <Fade delay={700}>
                 <Grid columns='equal' className="logo__grid" verticalAlign='middle' centered stackable>
                   <Grid.Row>
                     <Grid.Column>
@@ -42,10 +42,10 @@ const MediaSegment = () => (
                       <img className="logo" src={require("../../images/logo/logo-usa-today.png")}/>
                     </Grid.Column>
                     <Grid.Column>
-                      <img className="logo" src={require("../../images/logo/logo-datytime.png")}/>
+                      <img className="logo" src={require("../../images/logo/logo-bbc.png")}/>
                     </Grid.Column>
                     <Grid.Column>
-                      <img className="logo" src={require("../../images/logo/logo-morningblend.png")}/>
+                      <img className="logo" src={require("../../images/logo/logo-datytime.png")}/>
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
@@ -58,7 +58,7 @@ const MediaSegment = () => (
         </Grid.Column>
         <Grid.Column className='phil__hero-img-col'>
           <Image fluid className='phil__hero-img' src={require("../../images/news-hero.jpg")}/>
-          <Fade delay={500} fraction={.4}>
+          <Fade delay={500}>
           <div className='overlay-text'>
             In the<br/>
             News

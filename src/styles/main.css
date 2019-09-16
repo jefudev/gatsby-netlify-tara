@@ -37,7 +37,6 @@ p {
 .layoutBackground {
     background-color: #ffffff;
     background-image: url("../images/subtle-grey.png");
-    margin-bottom: -40px;
 }
 .hero__img--container {
     max-width: 1400px;
@@ -118,7 +117,7 @@ a.ui.label.segment__header--half {
     box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
     border: 1px solid rgba(34, 36, 38, 0.15);
 }
-.media__segment.ui.vertical.segment {
+.about__segment.ui.vertical.segment,.media__segment.ui.vertical.segment {
     border-top: 1px solid rgba(34, 36, 38, 0.15);
     padding: 0;
 }
@@ -142,6 +141,13 @@ a.ui.label.segment__header--half {
     position: relative;
     cursor: default;
 }
+.ui.celled.grid > .row > .column.phil__hero-img-col img {
+    -webkit-transition: .3s; /* Safari prior 6.1 */
+    transition: .6s;
+}
+.ui.celled.grid > .row > .column.phil__hero-img-col:hover img{
+    transform: scale(1.1);
+}
 .ui.celled.grid > .row > .column.phil__hero-img-col:after {
     content: '';
     position: absolute;
@@ -156,6 +162,9 @@ a.ui.label.segment__header--half {
     background-blend-mode: color-burn;
     -webkit-transition: .3s; /* Safari prior 6.1 */
     transition: .3s;
+}
+.about__segment .ui.celled.grid > .row > .column.phil__hero-img-col:after {
+    opacity: .9;
 }
 .ui.celled.grid > .row > .column.phil__hero-img-col:hover:after{
     opacity: 0;
@@ -186,7 +195,7 @@ a.ui.label.segment__header--half {
 .segment--table {
     display: table;
 }
-.segment__items--centered {
+.ui.grid .segment__items--centered, .segment__items--centered {
     display: table-cell;
     vertical-align: middle;
 }
@@ -205,5 +214,31 @@ a.ui.label.segment__header--half {
 .overlay-text--align-right {
     right: 0;
     text-align: right;
+}
+.overlay-text--awards{
+    font-size: 1.2em;
+    line-height: 1em;
+    margin: 0;
+    padding: 25px;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    height: 100%;
+}
+.overlay-text--awards .ui.list .list > .item > i.icon, .overlay-text--awards .ui.list > .item > i.icon {
+    font-size: 1.3em;
+    padding-top: 15px;
+}
+.about__segment > .ui.celled.grid > .row > .column.phil__hero-img-col {
+    pointer-events: none;
+}
+.overlay-text--awards .ui.list .list > .item .header, .overlay-text--awards .ui.list > .item .header {
+    color: #FFF;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: .8em;
+}
+.overlay-text--awards .ui.list .list > .item .description, .overlay-text--awards .ui.list > .item .description {
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
 }
 /* ──────────────────────────────────────────────────────────────────────────────── */
