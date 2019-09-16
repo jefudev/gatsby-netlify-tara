@@ -4,6 +4,9 @@ p {
 /*
  * ─── HOMEPAGE ───────────────────────────────────────────────────────────────────
  */
+ .ui.secondary.inverted.pointing.menu .item {
+     cursor:pointer;
+ }
 .hero__img--container .hero__about {
     position: absolute;
     color: #FFF;
@@ -143,7 +146,7 @@ a.ui.label.segment__header--half {
 }
 .ui.celled.grid > .row > .column.phil__hero-img-col img {
     -webkit-transition: .3s; /* Safari prior 6.1 */
-    transition: .6s;
+    transition: .3s;
 }
 .ui.celled.grid > .row > .column.phil__hero-img-col:hover img{
     transform: scale(1.1);

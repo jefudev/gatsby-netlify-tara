@@ -53,12 +53,12 @@ class DesktopContainer extends Component {
                 size='large'
                 >
                 <Container>
-                    <Menu.Item as='a'><Link activeClass="active" className="books__link" to="books__link" spy={true} smooth={true} duration={500}>Books</Link></Menu.Item>
-                    <Menu.Item as='a'><Link activeClass="active" className="media__link" to="media__link" spy={true} smooth={true} duration={500}>Media</Link></Menu.Item>
-                    <Menu.Item as='a'><Link activeClass="active" className="phil__link" to="phil__link" spy={true} smooth={true} duration={500}>Philanthropy</Link></Menu.Item>
-                    <Menu.Item as='a'><Link activeClass="active" className="gallery__link" to="gallery__link" spy={true} smooth={true} duration={500}>Gallery</Link></Menu.Item>
-                    <Menu.Item as='a'><Link activeClass="active" className="about__link" to="about__link" spy={true} smooth={true} duration={500}>About</Link></Menu.Item>
-                    <Menu.Item as='a'><Link activeClass="active" className="pip__link" to="pip__link" spy={true} smooth={true} duration={500}>Publishing in Paradise</Link></Menu.Item>
+                    <Link activeClass="active" className="books__link" to="books__link" spy={true} smooth={true} duration={500}><Menu.Item>Books</Menu.Item></Link>
+                    <Link activeClass="active" className="media__link" to="media__link" spy={true} smooth={true} duration={500}><Menu.Item>Media</Menu.Item></Link>
+                    <Link activeClass="active" className="phil__link" to="phil__link" spy={true} smooth={true} duration={500}><Menu.Item>Philanthropy</Menu.Item></Link>
+                    <Link activeClass="active" className="gallery__link" to="gallery__link" spy={true} smooth={true} duration={500}><Menu.Item>Gallery</Menu.Item></Link>
+                    <Link activeClass="active" className="about__link" to="about__link" spy={true} smooth={true} duration={500}><Menu.Item>About</Menu.Item></Link>
+                    <Link activeClass="active" className="pip__link" to="pip__link" spy={true} smooth={true} duration={500}><Menu.Item>Publishing in Paradise</Menu.Item></Link>
                     <Menu.Item position='right'>
                     <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
                         <Link className="contact__link" to="contact__link" spy={true} smooth={true} duration={500}>Say Hello!</Link>
