@@ -8,7 +8,8 @@ import {
   Button
 } from 'semantic-ui-react'
 import 'semantic-ui-less/semantic.less'
-import Fade from 'react-reveal/Fade';
+import Fade from 'react-reveal/Fade'
+import { Link } from "gatsby"
 
 const MediaSegment = () => (
 
@@ -50,13 +51,15 @@ const MediaSegment = () => (
                   </Grid.Row>
                 </Grid>
                 </Fade>
-                <Button as='a' primary style={{ marginTop: '0.5em' }}>
-                  Inquire for Interview
-                </Button>
+                <Link to="/media/">
+                  <Button as='a' primary style={{ marginTop: '0.5em' }}>
+                    View Interviews
+                  </Button>
+                </Link>
             </div>
           </Segment>
         </Grid.Column>
-        <Grid.Column className='phil__hero-img-col'>
+        <Grid.Column className='phil__hero-img-col' as='a' href='/media'>
           <Image fluid className='phil__hero-img' src={require("../../images/news-hero.jpg")}/>
           <Fade delay={500}>
           <div className='overlay-text'>

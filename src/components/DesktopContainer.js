@@ -10,8 +10,6 @@ import {
 } from 'semantic-ui-react'
 import 'semantic-ui-less/semantic.less'
 import getWidth from './getWidth'
-import * as Scroll from 'react-scroll';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const durationFn = function(deltaTop) {
     return deltaTop;
@@ -22,15 +20,9 @@ const durationFn = function(deltaTop) {
  * It can be more complicated, but you can create really flexible markup.
  */
 class DesktopContainer extends Component {
-    state = {}
-
-    hideFixedMenu = () => this.setState({ fixed: false })
-    showFixedMenu = () => this.setState({ fixed: true })
-
 
     render () {
         const { children } = this.props
-        const { fixed } = this.state
 
         return (
         <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
@@ -40,29 +32,24 @@ class DesktopContainer extends Component {
             onBottomPassedReverse={this.hideFixedMenu}
             >
             <Segment
-                inverted
                 textAlign='center'
-                style={{padding: '1em 0em' }}
+                style={{padding: '0' }}
                 vertical
             >
                 <Menu
-                fixed={fixed ? 'top' : null}
-                inverted={!fixed}
-                pointing={!fixed}
-                secondary={!fixed}
                 size='large'
                 >
                 <Container>
-                    <Link activeClass="active" className="books__link" to="books__link" spy={true} smooth={true} duration={500}><Menu.Item>Books</Menu.Item></Link>
-                    <Link activeClass="active" className="media__link" to="media__link" spy={true} smooth={true} duration={500}><Menu.Item>Media</Menu.Item></Link>
-                    <Link activeClass="active" className="phil__link" to="phil__link" spy={true} smooth={true} duration={500}><Menu.Item>Philanthropy</Menu.Item></Link>
-                    <Link activeClass="active" className="gallery__link" to="gallery__link" spy={true} smooth={true} duration={500}><Menu.Item>Gallery</Menu.Item></Link>
-                    <Link activeClass="active" className="about__link" to="about__link" spy={true} smooth={true} duration={500}><Menu.Item>About</Menu.Item></Link>
-                    <Link activeClass="active" className="pip__link" to="pip__link" spy={true} smooth={true} duration={500}><Menu.Item>Publishing in Paradise</Menu.Item></Link>
+                    <Menu.Item as='a' active href='/'>Home</Menu.Item>
+                    <Menu.Item as='a' href='/media'>Media</Menu.Item>
+                    <Menu.Item as='a' href='/philanthropy'>Philanthropy</Menu.Item>
+                    <Menu.Item as='a' href='/gallery'>Gallery</Menu.Item>
+                    <Menu.Item as='a' href='/about'>About</Menu.Item>
+                    <Menu.Item as='a' href='/publish-in-paradise'>Publish in Paradise</Menu.Item>
                     <Menu.Item position='right'>
-                    <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
-                        <Link className="contact__link" to="contact__link" spy={true} smooth={true} duration={500}>Say Hello!</Link>
-                    </Button>
+                        <Button as='a' href='/contact' style={{ marginLeft: '0.5em' }} primary>
+                            Say Hello!
+                        </Button>
                     </Menu.Item>
                 </Container>
                 </Menu>

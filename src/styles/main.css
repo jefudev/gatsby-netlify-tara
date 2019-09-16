@@ -142,7 +142,6 @@ a.ui.label.segment__header--half {
     height: 600px;
     overflow: hidden;
     position: relative;
-    cursor: default;
 }
 .ui.celled.grid > .row > .column.phil__hero-img-col img {
     -webkit-transition: .3s; /* Safari prior 6.1 */
@@ -243,5 +242,8 @@ a.ui.label.segment__header--half {
 .overlay-text--awards .ui.list .list > .item .description, .overlay-text--awards .ui.list > .item .description {
     color: #FFF;
     font-family: 'Lato', sans-serif;
+}
+.home__contact-form {
+    padding: 100px 0;
 }
 /* ──────────────────────────────────────────────────────────────────────────────── */
