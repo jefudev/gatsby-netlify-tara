@@ -8,17 +8,30 @@ import '../../styles/main.css'
 
 const ContactSegment = () => (
   <Container className='home__contact-form'>
-    <Form method="post" netlify-honeypot="bot-field" data-netlify="true">
-      <input type="hidden" name="bot-field" />
+    <Form name="contact" method="POST" data-netlify="true">
       <Form.Group widths='equal'>
-        <Form.Input fluid label='First name' placeholder='First name' />
-        <Form.Input fluid label='Last name' placeholder='Last name' />
+        <Form.Input fluid label='Name' placeholder='Name' type="text" name='name'/>
+        <Form.Input fluid label='Email' placeholder='Email' type="email" name='email'/>
       </Form.Group>
-      <Form.TextArea label='About' placeholder='I look forward to connecting with you!' />
+      <Form.TextArea label='Message' placeholder='I look forward to connecting with you!' name='message' />
       <Form.Checkbox label='I agree to the Terms and Conditions' />
       <Form.Button type='submit'>Submit</Form.Button>
     </Form>
-    </Container>
+    <form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+  </Container>
 )
 
 export default ContactSegment
