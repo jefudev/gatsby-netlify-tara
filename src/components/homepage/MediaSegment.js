@@ -15,9 +15,9 @@ const MediaSegment = () => (
 
 
 <Segment style={{ padding: '0em' }} vertical className='media__segment' name='media__link'>
-  <Grid celled='internally' columns='equal' stackable>
+  <Grid celled='internally' columns='equal'>
     <Grid.Row textAlign='center'>
-        <Grid.Column>
+        <Grid.Column mobile={14} tablet={10} computer={8} className="segment__content">
           <Segment className='height100 segment--table' stacked>
               <div class='segment__items--centered'>
                 <Label color='pink' as='a' className="segment__header segment__header--padding-bottom segment__header--half">
@@ -26,7 +26,7 @@ const MediaSegment = () => (
                   </Header>
                 </Label>
                 <Fade delay={700}>
-                <Grid columns='equal' className="logo__grid" verticalAlign='middle' centered stackable>
+                <Grid columns='equal' className="logo__grid" verticalAlign='middle' centered >
                   <Grid.Row>
                     <Grid.Column>
                       <img className="logo" src={require("../../images/logo/lgo-abc.png")}/>
@@ -59,11 +59,11 @@ const MediaSegment = () => (
             </div>
           </Segment>
         </Grid.Column>
-        <Grid.Column className='phil__hero-img-col' as='a' href='/media'>
+        <Grid.Column mobile={2} tablet={6} computer={8} className='phil__hero-img-col' as='a' href='/media'>
           <Image fluid className='phil__hero-img' src={require("../../images/news-hero.jpg")}/>
           <Fade delay={500}>
           <div className='overlay-text'>
-            In the<br/>
+            In the <br/>
             News
           </div>
           </Fade>

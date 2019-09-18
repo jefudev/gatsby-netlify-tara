@@ -14,9 +14,9 @@ import Fade from 'react-reveal/Fade';
 
 const AboutSegment = () => (
   <Segment style={{ padding: '0em' }} vertical className='about__segment' name='about__link'>
-  <Grid celled='internally' columns='equal' stackable>
+  <Grid celled='internally' columns='equal'>
     <Grid.Row textAlign='center'>
-        <Grid.Column>
+        <Grid.Column tablet={16} computer={8} className="segment__content">
           <Segment className='height100 segment--table' stacked>
               <div className='segment__items--centered'>
                 <Label color='pink' as='a' className="segment__header segment__header--padding-bottom segment__header--half">
@@ -25,21 +25,21 @@ const AboutSegment = () => (
                   </Header>
                 </Label>
                 <Fade delay={700}>
-                <p style={{ fontSize: '1.33em' }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <p className='segment__blurb segment__blurb--about'>
+                  Tara Richter is the President of Richter Publishing. She specializes in helping business owners how to write their non-fiction story in 4 weeks & publish a book in order to become an expert in their industry.
                 </p>
-                </Fade>
                 <Button as='a' primary style={{ marginTop: '0.5em' }} href='http://www.amazon.com/Tara-Richter/e/B00CGKD8FG' target='_blank'>
                   See More
                 </Button>
+                </Fade>
             </div>
           </Segment>
         </Grid.Column>
-        <Grid.Column className='phil__hero-img-col'>
+        <Grid.Column className='phil__hero-img-col segment__awards' tablet={16} computer={8}>
           <Image fluid className='phil__hero-img' src={require("../../images/graduation.jpg")}/>
           <Fade delay={500}>
           <div className='overlay-text overlay-text--awards segment--table'>
-            <Grid className='segment__items--centered'>
+            <Grid className='segment__items--centered segments__items--about'>
               <Grid.Row>
                 <Grid.Column width={8}>
                   <List>

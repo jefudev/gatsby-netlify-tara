@@ -9,7 +9,7 @@ const Thanks = (props) => {
     return(
         <HomepageLayout>
             Thank You! <br/>
-            I get back to you as soon as I can!
+            I'll get back to you as soon as I can!
         </HomepageLayout>
 )}
 
