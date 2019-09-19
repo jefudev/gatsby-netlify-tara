@@ -35,11 +35,13 @@ class DesktopContainer extends Component {
                 textAlign='center'
                 style={{padding: '0' }}
                 vertical
+                className='desktop__header'
             >
                 <Menu
                 size='large'
+                inverted
                 >
-                <Container>
+                <Container className='hidden-mobile'>
                     <Menu.Item as='a' active href='/'>Home</Menu.Item>
                     <Menu.Item as='a' href='/media'>Media</Menu.Item>
                     <Menu.Item as='a' href='/philanthropy'>Philanthropy</Menu.Item>

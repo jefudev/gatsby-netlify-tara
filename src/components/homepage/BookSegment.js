@@ -14,25 +14,37 @@ import React, { Component } from "react";
 
 export default class BookSegment extends Component {
   render() {
-    var settings = {
+    const settings = {
       dots: true,
       infinite: false,
-      speed: 500,
+      speed: 300,
       slidesToShow: 4,
       slidesToScroll: 4,
-      initialSlide: 0,
       lazyLoad: true,
       responsive: [
         {
-          breakpoint: 992,
+          breakpoint: 1024,
           settings: {
             slidesToShow: 3,
-            swipeToSlide: true,
+            slidesToScroll: 3,
             infinite: true,
-            dots: true,
-            variableWidth: true,
+            dots: true
           }
         },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
       ]
     }
     return (
@@ -53,31 +65,25 @@ export default class BookSegment extends Component {
         <div className="book__container">
           <Slider {...settings}>
             <div>
-              <a href="" target="_blank"><img className="book" src={require("../../images/books/launch-your-book.jpg")}/></a>
+              <a href="https://www.amazon.com/gp/product/0692298940" target="_blank"><img className="book" src={require("../../images/books/write-a-book-in-4-weeks.jpg")}/></a>
             </div>
             <div>
-              <a href="" target="_blank"><img className="book" src={require("../../images/books/publish-a-book-yourself.jpg")}/></a>
+            <a href="https://www.amazon.com/gp/product/B01F7Y5K1C" target="_blank"><img className="book" src={require("../../images/books/blog.jpg")}/></a>
             </div>
             <div>
-              <a href="" target="_blank"><img className="book" src={require("../../images/books/write-a-book-in-4-weeks.jpg")}/></a>
+            <a href="https://www.amazon.com/gp/product/0692295208/" target="_blank"><img className="book" src={require("../../images/books/publish-a-book-yourself.jpg")}/></a>
             </div>
             <div>
-              <a href="" target="_blank"><img className="book" src={require("../../images/books/dating-jungle-coloring-book.jpg")}/></a>
+              <a href="https://www.amazon.com/gp/product/0692425330" target="_blank"><img className="book" src={require("../../images/books/launch-your-book.jpg")}/></a>
             </div>
             <div>
-              <a href="" target="_blank"><img className="book" src="https://picsum.photos/200/300"/></a>
+              <a href="https://www.amazon.com/gp/product/0692623485" target="_blank"><img className="book" src={require("../../images/books/dj1.jpg")}/></a>
             </div>
             <div>
-              <a href="" target="_blank"><img className="book" src="https://picsum.photos/200/300"/></a>
+              <a href="https://www.amazon.com/gp/product/069262225X" target="_blank"><img className="book" src={require("../../images/books/dj2.jpg")}/></a>
             </div>
             <div>
-              <a href="" target="_blank"><img className="book" src="https://picsum.photos/200/300"/></a>
-            </div>
-            <div>
-              <a href="" target="_blank"><img className="book" src="https://picsum.photos/200/300"/></a>
-            </div>
-            <div>
-              <a href="" target="_blank"><img className="book" src="https://picsum.photos/200/300"/></a>
+              <a href="https://www.amazon.com/gp/product/1492272809" target="_blank"><img className="book" src={require("../../images/books/dj3.jpg")}/></a>
             </div>
           </Slider>
         </div>

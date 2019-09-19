@@ -38,8 +38,8 @@ const AboutSegment = () => (
         <Grid.Column className='phil__hero-img-col segment__awards' tablet={16} computer={8}>
           <Image fluid className='phil__hero-img' src={require("../../images/graduation.jpg")}/>
           <Fade delay={500}>
-          <div className='overlay-text overlay-text--awards segment--table'>
-            <Grid className='segment__items--centered segments__items--about'>
+          <div className='overlay-text--awards segment--table'>
+            <Grid className='segment__items--centered segments__items--about' stackable>
               <Grid.Row>
                 <Grid.Column width={8}>
                   <List>

@@ -1,9 +1,18 @@
 p {
     margin: 1em;
 }
+html, body {
+    overflow-x: hidden;
+}
+body {
+    position: relative
+}
 /*
  * ─── HOMEPAGE ───────────────────────────────────────────────────────────────────
  */
+ .desktop__header .ui.large.menu {
+    border-radius: 0;
+}
  .ui.secondary.inverted.pointing.menu .item {
      cursor:pointer;
  }
@@ -112,10 +121,10 @@ a.ui.label.segment__header--half {
     color: #000;
 }
 .book__container .slick-prev{
-    left: 0;
+    left: -20px;
 }
 .book__container .slick-next{
-    right: 0;
+    right: -20px;
 }
 .book {
     padding: 10px;
@@ -223,10 +232,16 @@ a.ui.label.segment__header--half {
     text-align: right;
 }
 .overlay-text--awards{
+    position: absolute;
+    color: #FFF;
+    font-family: 'Playfair Display', sans-serif;
+    z-index: 1;
+    -webkit-transition: .3s; /* Safari prior 6.1 */
+    transition: .3s;
     font-size: 1.2em;
     line-height: 1em;
     margin: 0;
-    padding: 25px;
+    padding: 0;
     width: 100%;
     color: #fff;
     text-align: left;
@@ -247,11 +262,18 @@ a.ui.label.segment__header--half {
 .overlay-text--awards .ui.list .list > .item .description, .overlay-text--awards .ui.list > .item .description {
     color: #FFF;
     font-family: 'Lato', sans-serif;
+    font-size: .9em;
+}
+.overlay-text--awards > .ui.grid > .row {
+    padding: 10px 0;
 }
 .home__contact-form {
     padding: 100px 0;
 }
 /* ──────────────────────────────────────────────────────────────────────────────── */
+
+@media (min-width: 1200px) {
+}
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 1200px) {
@@ -269,11 +291,8 @@ a.ui.label.segment__header--half {
         font-size: 5em;
         padding: 0 35px 0 25px;
     }
-    .book__container .slick-prev{
-        left: -20px;
-    }
-    .book__container .slick-next{
-        right: -20px;
+    .overlay-text--awards {
+        font-size: 1em;
     }
 }
 
@@ -325,10 +344,16 @@ a.ui.label.segment__header--half {
     .book {
         margin: 0 5px;
     }
+    .footer__txt {
+        font-size: .8em;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 768px) {
+    .hidden-mobile {
+        display: none;
+    }
     #hero__img {
         background-position: left;
         height: 600px;
@@ -353,6 +378,15 @@ a.ui.label.segment__header--half {
         -webkit-writing-mode: vertical-lr;
         font-size: 2em;
         padding: 30px 10px;
+    }
+    .ui.celled.grid > .row > .column.phil__hero-img-col {
+        height: 550px;
+    }
+    .overlay-text--awards {
+        position: relative;
+    }
+    .overlay-text--awards > .ui.stackable.grid > .row > .wide.column {
+        padding: .2em 1em !important;
     }
 }
 
@@ -409,9 +443,24 @@ a.ui.label.segment__header--half {
     .bookBlurb {
         margin: 10px;
     }
+    .book {
+        margin: 0 auto;
+    }
     .ui.container.book__content {
         margin-left: 5px!important;
         margin-right: 5px!important;
         margin-bottom: 5px;
+    }
+    .overlay-text--awards .ui.list {
+        font-size: .9em;
+    }
+    .ui.celled.grid > .row > .column.phil__hero-img-col {
+        height: 620px;
+    }
+    .overlay-text--awards > .ui.stackable.grid > .row > .wide.column {
+        padding: .5em 1em !important;
+    }
+    .about__segment .ui.grid .segment__items--centered {
+        padding: 30px 0;
     }
 }
