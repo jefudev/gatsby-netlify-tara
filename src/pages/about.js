@@ -8,7 +8,9 @@ import HomepageLayout from "../layouts/HomepageLayout"
 const About = (props) => {
     return(
         <HomepageLayout>
-            About Content
+            <p style={{margin:'100px',textAlign:'center'}}>
+                Site in progress. Check Back Soon!
+            </p>
         </HomepageLayout>
 )}
 

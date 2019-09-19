@@ -9,7 +9,10 @@ import GallerySegment from '../components/homepage/GallerySegment'
 const Gallery = (props) => {
     return(
         <HomepageLayout>
-            <GallerySegment/>
+            <p style={{margin:'100px',textAlign:'center'}}>
+                Site in progress. Check Back Soon!
+            </p>
+            {/* <GallerySegment/> */}
         </HomepageLayout>
 )}
 
