@@ -272,6 +272,9 @@ a.ui.label.segment__header--half {
 .home__contact-form {
     padding: 100px 0;
 }
+.pushable > .pusher.dimmed:after {
+    z-index: 10;
+}
 /* ──────────────────────────────────────────────────────────────────────────────── */
 
 @media (min-width: 1200px) {

@@ -6,11 +6,11 @@ import MobileContainer from './MobileContainer'
 
 const ResponsiveContainer = ({ children }) => (
     <div>
-      <DesktopContainer>{children}</DesktopContainer>
+      <DesktopContainer className='hidden-mobile'>{children}</DesktopContainer>
       <MobileContainer>{children}</MobileContainer>
     </div>
   )
-  
+
   ResponsiveContainer.propTypes = {
     children: PropTypes.node,
   }
