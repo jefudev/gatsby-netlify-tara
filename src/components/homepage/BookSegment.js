@@ -49,9 +49,9 @@ export default class BookSegment extends Component {
     }
     return (
     <Container className='book__content' name='books__link'>
-      <a href='https://www.facebook.com' target='_blank' class='social__icons'><Icon name='facebook square' size='big' link/></a>
-      <a href='https://www.linkedin.com' target='_blank' class='social__icons'><Icon name='linkedin' size='big' link/></a>
-      <a href='https://www.twitter.com' target='_blank' class='social__icons'><Icon name='twitter square' size='big' link/></a>
+      <a href='https://www.facebook.com/richterpublishingllc/' target='_blank' class='social__icons'><Icon name='facebook square' size='big' link/></a>
+      <a href='https://twitter.com/tararrichter' target='_blank' class='social__icons'><Icon name='twitter square' size='big' link/></a>
+      <a href='https://www.linkedin.com/in/tararaerichter/' target='_blank' class='social__icons'><Icon name='linkedin' size='big' link/></a>
 
       <Segment className="book-segment" stacked >
         <Label color='pink' as='a' className="segment__header segment__header--about">
