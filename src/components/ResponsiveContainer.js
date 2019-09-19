@@ -6,8 +6,7 @@ import MobileContainer from './MobileContainer'
 
 const ResponsiveContainer = ({ children }) => (
     <div>
-      <DesktopContainer className='hidden-mobile'>{children}</DesktopContainer>
-      <MobileContainer>{children}</MobileContainer>
+      <DesktopContainer>{children}</DesktopContainer>
     </div>
   )
 

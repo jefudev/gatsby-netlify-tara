@@ -11,8 +11,21 @@ import {
 const HomepageFooter = () => (
 <Segment inverted vertical style={{ padding: '2em 0em' }}>
     <Container>
-        <Grid inverted>
-            <Grid.Row column='equal' className='footer__txt'>
+        <Grid inverted stackable className='footer__txt'>
+            <Grid.Row>
+                <Grid.Column>
+                <List link inverted>
+                <List.Item as='a' href='/'>Home</List.Item>
+                <List.Item as='a' href='/media'>Media</List.Item>
+                <List.Item as='a' href='/philanthropy'>Philanthropy</List.Item>
+                <List.Item as='a' href='/gallery'>Gallery</List.Item>
+                <List.Item as='a' href='/about'>About</List.Item>
+                <List.Item as='a' href='/publish-in-paradise'>Publish in Paradise</List.Item>
+                <List.Item as='a' href='/contact'>Contact</List.Item>
+                </List>
+                </Grid.Column>
+            </Grid.Row>
+            <Grid.Row column='equal' >
                 <Grid.Column floated='left' width={8}>
                     Copyright &copy; {new Date().getFullYear()}
                 </Grid.Column>

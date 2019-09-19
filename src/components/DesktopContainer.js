@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import {
-  Button,
-  Container,
-  Menu,
-  Responsive,
-  Segment,
-  Visibility,
+    Button,
+    Container,
+    Menu,
+    Responsive,
+    Modal,
+    Icon,
+    Divider
 } from 'semantic-ui-react'
 import 'semantic-ui-less/semantic.less'
-import getWidth from './getWidth'
 
 const durationFn = function(deltaTop) {
     return deltaTop;
@@ -25,39 +25,54 @@ class DesktopContainer extends Component {
         const { children } = this.props
 
         return (
-        <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
-            <Visibility
-            once={false}
-            onBottomPassed={this.showFixedMenu}
-            onBottomPassedReverse={this.hideFixedMenu}
-            >
-            <Segment
-                textAlign='center'
-                style={{padding: '0' }}
-                vertical
-                className='desktop__header'
-            >
-                <Menu
-                size='large'
-                inverted
-                >
-                <Container className='hidden-mobile'>
-                    <Menu.Item as='a' active href='/'>Home</Menu.Item>
-                    <Menu.Item as='a' href='/media'>Media</Menu.Item>
-                    <Menu.Item as='a' href='/philanthropy'>Philanthropy</Menu.Item>
-                    <Menu.Item as='a' href='/gallery'>Gallery</Menu.Item>
-                    <Menu.Item as='a' href='/about'>About</Menu.Item>
-                    <Menu.Item as='a' href='/publish-in-paradise'>Publish in Paradise</Menu.Item>
-                    <Menu.Item position='right'>
-                        <Button as='a' href='/contact' style={{ marginLeft: '0.5em' }} primary>
-                            Say Hello!
-                        </Button>
-                    </Menu.Item>
+        <Responsive>
+            <Menu inverted stackable className='desktop__header' style={{borderRadius:0}}>
+                <Container>
+                <Menu.Item as='a' href='/'>Home</Menu.Item>
+                <Menu.Item as='a' href='/media'>Media</Menu.Item>
+                <Menu.Item as='a' href='/philanthropy'>Philanthropy</Menu.Item>
+                <Menu.Item as='a' href='/gallery'>Gallery</Menu.Item>
+                <Menu.Item as='a' href='/about'>About</Menu.Item>
+                <Menu.Item as='a' href='/publish-in-paradise'>Publish in Paradise</Menu.Item>
+                <Menu.Item position='right'>
+                    <Button as='a' href='/contact' style={{ marginLeft: '0.5em' }} primary>
+                        Say Hello!
+                    </Button>
+                </Menu.Item>
                 </Container>
-                </Menu>
-            </Segment>
-            </Visibility>
+            </Menu>
+            <Menu inverted className='mobile__header'>
+                <Menu.Item position='right'>
+                    <Modal trigger={<Icon name='bars'/>}>
+                        <Modal.Content image>
+                            <Modal.Description className='mobileheader__menu'>
+                            <Divider horizontal inverted>
+                                <a href='/'>Home</a>
+                            </Divider>
+                            <Divider horizontal inverted>
+                                <a href='/media'>Media</a>
+                            </Divider>
+                            <Divider horizontal inverted>
+                                <a href='/philanthropy'>Philanthropy</a>
+                            </Divider>
+                            <Divider horizontal inverted>
+                                <a href='/gallery'>Gallery</a>
+                            </Divider>
+                            <Divider horizontal inverted>
+                                <a href='/about'>About</a>
+                            </Divider>
+                            <Divider horizontal inverted>
+                                <a href='/publish-in-paradise'>Publish in Paradise</a>
+                            </Divider>
+                            <Divider horizontal inverted>
+                                <a href='/contact'>Contact</a>
+                            </Divider>
 
+                            </Modal.Description>
+                        </Modal.Content>
+                    </Modal>
+                </Menu.Item>
+            </Menu>
             {children}
         </Responsive>
         )
@@ -69,3 +84,4 @@ DesktopContainer.propTypes = {
 }
 
 export default DesktopContainer
+
