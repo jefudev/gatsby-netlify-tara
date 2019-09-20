@@ -14,18 +14,18 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      # - file: "content/home.md"
-      #   name: "home"
-      #   label: "Home Page"
-      #   fields:
-      #     - {label: Title, name: title, widget: string}
-      #     - {label: Intro text, name: intro, widget: text}
-      #     - {label: Image, name: image, widget: image}
+      - file: "content/home.md"
+        name: "home"
+        label: "Home Page"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro text, name: intro, widget: text}
+          - {label: Image, name: image, widget: image}
       - file: "content/media_gallery.md"
         name: "media"
         label: "Media"
         fields:
-          - { label: 'Text', name: 'body', widget: 'markdown' }
+          - { label: 'Media Text', name: 'body', widget: 'markdown' }
           - label: "Media Gallery"
             name: "mediaGalleryImages"
             widget: "list"
@@ -34,7 +34,7 @@ collections:
         name: "gallery"
         label: "Gallery"
         fields:
-          - { label: 'Text', name: 'body', widget: 'markdown' }
+          - { label: 'Gallery Text', name: 'body', widget: 'markdown' }
           - label: "Gallery Images"
             name: "galleryImages"
             widget: "list"
@@ -43,7 +43,7 @@ collections:
         name: "philanthropy"
         label: "Philanthropy"
         fields:
-          - { label: 'Text', name: 'body', widget: 'markdown' }
+          - { label: 'Philanthropy Text', name: 'body', widget: 'markdown' }
           - label: "Gallery Images"
             name: "galleryImages"
             widget: "list"
@@ -52,7 +52,7 @@ collections:
         name: "about"
         label: "About"
         fields:
-          - { label: 'Text', name: 'body', widget: 'markdown' }
+          - { label: 'About Text', name: about, widget: 'markdown' }
           - label: "Gallery Images"
             name: "galleryImages"
             widget: "list"
@@ -61,8 +61,9 @@ collections:
         name: "publishinparadise"
         label: "Publish in Paradise"
         fields:
-          - { label: 'Text', name: 'body', widget: 'markdown' }
+          - { label: 'Publish in Paradise Text', name: 'body', widget: 'markdown' }
           - label: "Gallery Images"
             name: "galleryImages"
             widget: "list"
             field: {label: Image, name: image, widget: image}
+    delete: false
