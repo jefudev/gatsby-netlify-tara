@@ -1,10 +1,10 @@
 ---
 intro: >-
-  Tara Richter is the President of Richter Publishing LLC. She specializes in
+  **Tara Richter is the President of Richter Publishing LLC. She specializes in
   helping business owners how to write their non-fiction story in four weeks &
   publish a book in order to become an expert in their industry. She has been
   featured on CNN, ABC, Daytime TV, FOX, SSN, Channel 10 News, USA TODAY,
-  Beverly Hills Times and radio stations all over the world.
+  Beverly Hills Times and radio stations all over the world.**
 
 
   a. Her degree is in Graphic Design and she worked in the copy and print
