@@ -23,7 +23,7 @@ const About = (props) => {
                 <Segment className='page__segment'>
                     <p className='segment__txt' style={{textAlign:'left'}}>
                     Tara Richter is the President of Richter Publishing LLC. She specializes in helping business owners how to write their non-fiction story in four weeks & publish a book in order to become an expert in their industry. She has been featured on CNN, ABC, Daytime TV, FOX, SSN, Channel 10 News, USA TODAY, Beverly Hills Times and radio stations all over the world.
-                    <ol type="a">
+                    <ul>
                         <li>Her degree is in Graphic Design and she worked in the copy and print industry in the Silicon Valley. She has written and published 11 of her own books in just a few short years. Tara now has published many other authors all over the world including Anthony Amos & celebrity entrepreneur, Kevin Harrington, Shark from ABC’s “Shark Tank” with their joint book, “How to Catch a Shark.”</li>
                         <li>Writing your story is a very therapeutic journey.  Tara knows this first hand from writing her own books in the Dating Jungle Series. She utilizes her certifications in Professional Coaching & Reiki Energy Healing to help authors through the fear of publishing their stories for the world to hear. Richter’s team guides their authors through every step of the process to make sure it’s a fulfilling experience.</li>
                         <li>Find her books here: <a href="http://www.amazon.com/Tara-Richter/e/B00CGKD8FG">http://www.amazon.com/Tara-Richter/e/B00CGKD8FG</a></li>
@@ -39,7 +39,7 @@ const About = (props) => {
                                 <li>2019 Nominee for Tampa Bay’s Corporate Philanthropy  Award</li>
                             </ul>
                         </li>
-                    </ol>
+                    </ul>
                     </p>
                 </Segment>
             </Container>

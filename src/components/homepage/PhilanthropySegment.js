@@ -35,7 +35,7 @@ const PhilanthropySegment = () => (
                 <p className='segment__blurb'>
                   Tara always had a love for travel. In the summer of 2019 she spent four month in Asia volunteering at various non-profits. When she is not abroad, Richter also does numerous activities for the Tampa Bay community.
                 </p>
-                <Button as='a' primary style={{ marginTop: '0.5em' }}>
+                <Button as='a' href='/philanthropy' primary style={{ marginTop: '0.5em' }}>
                   See More
                 </Button>
                 </Fade>

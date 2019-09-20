@@ -28,7 +28,7 @@ const AboutSegment = () => (
                 <p className='segment__blurb segment__blurb--about'>
                   Tara Richter is the President of Richter Publishing. She specializes in helping business owners how to write their non-fiction story in 4 weeks & publish a book in order to become an expert in their industry.
                 </p>
-                <Button as='a' primary style={{ marginTop: '0.5em' }} href='http://www.amazon.com/Tara-Richter/e/B00CGKD8FG' target='_blank'>
+                <Button as='a' primary style={{ marginTop: '0.5em' }} href='/about' target='_blank'>
                   See More
                 </Button>
                 </Fade>
