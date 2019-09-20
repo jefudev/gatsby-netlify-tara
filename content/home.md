@@ -1,6 +1,6 @@
 ---
-title: Jeff
-intro: Interesting
-image: /assets/g0015184.jpg
+title: test
+intro: test
+image: /assets/2nd-book-with-an-interviewee.jpg
 ---
 

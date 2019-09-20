@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import '../styles/main.css'
+import { graphql } from 'gatsby';
 import {
     Segment,
     Header,
@@ -14,6 +15,7 @@ import SEOComponent from "../components/SEOComponent"
 import HomepageLayout from "../layouts/HomepageLayout"
 
 const About = (props) => {
+
     return(
         <HomepageLayout>
             <SEOComponent title="About" />
@@ -47,3 +49,20 @@ const About = (props) => {
 )}
 
 export default About
+
+export const query = graphql`
+  query {
+    allFile (filter: {sourceInstanceName: {eq: "content"} name: {eq: "home"}}) {
+      edges {
+        node {
+          childMarkdownRemark {
+            frontmatter {
+              title
+              intro
+              image
+          }
+        }
+      }
+    }
+  }
+}`

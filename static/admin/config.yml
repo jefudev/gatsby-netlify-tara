@@ -22,22 +22,48 @@ collections:
           - {label: Intro text, name: intro, widget: text}
           - {label: Image, name: image, widget: image}
       - file: "content/media_gallery.md"
-        name: "mediagallery"
-        label: "Media Gallery"
+        name: "media"
+        label: "Media"
         fields:
-          - label: Media Gallery Images
-            name: media_gallery_images
-            widget: image
-            media_library:
-              config:
-                multiple: true
+          - { label: 'Media Text', name: 'body', widget: 'markdown' }
+          - label: "Media Gallery"
+            name: "mediaGalleryImages"
+            widget: "list"
+            field: {label: Image, name: image, widget: image}
       - file: "content/gallery.md"
         name: "gallery"
-        label: "Photo Gallery"
+        label: "Gallery"
         fields:
-          - label: Gallery Images
-            name: gallery_images
-            widget: image
-            media_library:
-              config:
-                multiple: true
+          - { label: 'Gallery Text', name: 'body', widget: 'markdown' }
+          - label: "Gallery Images"
+            name: "galleryImages"
+            widget: "list"
+            field: {label: Image, name: image, widget: image}
+      - file: "content/philanthropy.md"
+        name: "philanthropy"
+        label: "Philanthropy"
+        fields:
+          - { label: 'Philanthropy Text', name: 'body', widget: 'markdown' }
+          - label: "Gallery Images"
+            name: "galleryImages"
+            widget: "list"
+            field: {label: Image, name: image, widget: image}
+      - file: "content/about.md"
+        name: "about"
+        label: "About"
+        fields:
+          - { label: 'About Text', name: about, widget: 'markdown' }
+          - label: "Gallery Images"
+            name: "galleryImages"
+            widget: "list"
+            field: {label: Image, name: image, widget: image}
+      - file: "content/publishinparadise.md"
+        name: "publishinparadise"
+        label: "Publish in Paradise"
+        fields:
+          - { label: 'Publish in Paradise Text', name: 'body', widget: 'markdown' }
+          - label: "Gallery Images"
+            name: "galleryImages"
+            widget: "list"
+            field: {label: Image, name: image, widget: image}
+    delete: false
