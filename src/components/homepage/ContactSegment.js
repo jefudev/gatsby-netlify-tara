@@ -58,10 +58,10 @@ export default function ContactSegment() {
           </label>
         </p>
         <Form.Group widths='equal'>
-          <Form.Input fluid label='Name' placeholder='Name' type="text" name='name' onChange={handleChange} />
-          <Form.Input fluid label='Email' placeholder='Email' type="email" name='email' onChange={handleChange} />
+          <Form.Input fluid label='Name' type="text" name='name' onChange={handleChange} />
+          <Form.Input fluid label='Email' type="email" name='email' onChange={handleChange} />
         </Form.Group>
-        <Form.TextArea label='Message' placeholder='I look forward to connecting with you!' name='message' onChange={handleChange} />
+        <Form.TextArea label='Message' name='message' onChange={handleChange} />
         <Form.Checkbox label='I agree to the Terms and Conditions' />
         <Form.Button type='submit'>Submit</Form.Button>
       </Form>

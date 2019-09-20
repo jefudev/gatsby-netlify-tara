@@ -2,22 +2,42 @@ backend:
   # local testing
   name: github
   repo: jef-lau/gatsby-netlify-tara
-  
+
   # production
   # name: git-gateway
 
 media_folder: static/assets
-public_folder: assets
+public_folder: /assets
+
 
 collections:
-  - label: "Pages"
-    name: "pages"
+  - name: "pages"
+    label: "Pages"
     files:
-      - label: "Home Page"
+      - file: "content/home.md"
         name: "home"
-        file: "content/home.md"
+        label: "Home Page"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro text, name: intro, widget: text}
           - {label: Image, name: image, widget: image}
-    delete: false
+      - file: "content/media_gallery.md"
+        name: "mediagallery"
+        label: "Media Gallery"
+        fields:
+          - label: Media Gallery Images
+            name: media_gallery_images
+            widget: image
+            media_library:
+              config:
+                multiple: true
+      - file: "content/gallery.md"
+        name: "gallery"
+        label: "Photo Gallery"
+        fields:
+          - label: Gallery Images
+            name: gallery_images
+            widget: image
+            media_library:
+              config:
+                multiple: true

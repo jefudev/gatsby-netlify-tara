@@ -282,6 +282,29 @@ a.ui.label.segment__header--half {
     padding: 100px 0;
 }
 
+.media__hero {
+    background:linear-gradient(0deg,rgba(16,19,87,0.9),rgba(16,19,87,0.9)),url('../images/homepage-hero.jpg');
+    background-blend-mode: multiply;
+    width: 100%;
+    background-position: center;
+    height: 350px;
+    background-size: cover;
+    display: block;
+}
+
+.hero__overlay {
+    position: absolute;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 3em;
+    line-height: 1em;
+    top: 300px;
+    padding: 0 50px;
+}
+.segment__txt {
+    text-align: center;
+}
 /* ──────────────────────────────────────────────────────────────────────────────── */
 
 @media (min-width: 1200px) {

@@ -77,6 +77,9 @@ export default class BookSegment extends Component {
               <a href="https://www.amazon.com/gp/product/0692425330" target="_blank"><img className="book" src={require("../../images/books/launch-your-book.jpg")}/></a>
             </div>
             <div>
+              <a href="https://www.amazon.com/gp/product/1945812737" target="_blank"><img className="book" src={require("../../images/books/coloring-book.jpg")}/></a>
+            </div>
+            <div>
               <a href="https://www.amazon.com/gp/product/0692623485" target="_blank"><img className="book" src={require("../../images/books/dj1.jpg")}/></a>
             </div>
             <div>
