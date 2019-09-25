@@ -49,11 +49,11 @@ const Philanthropy = (props) => {
                     Richter Publishing has an annual manuscript contests and awards free editing and publishing contracts to those who are impacting the community in a positive way. Each year aspiring authors submit their manuscript of at least 20,000 words to win a free publishing package. The package consists of three rounds of professional edits, formatting and publishing with global distribution. The winners story must not only be well written, it also has to have a positive message. The story’s mission must help a cause in order to win. (Each package is a cash value of $6,000)
                     </p>
                     <p className='segment__txt--phil clearfix'>
-                    <img className="phil-left" src={require("../images/_phil6.jpg")}/>
+                    <img className="phil-left" src={require("../images/_phil06.jpg")}/>
                     <strong>2017 Winner Alder Allensworth, “Prevail: Celebrate the Journey.”</strong> After being diagnosed with a rare, usually fatal cancer, Alder Allensworth made a miraculous recovery and took on a sailing journey most would only dream of. Having lost one eye to cancer, Alder dedicated herself to this 1,200-mile trip to raise money and awareness for sailors with disabilities, and quickly realized that sailing the 12-foot Prevail from Florida to Maine presented a whole new set of challenges that she had never encountered before, even on the water. “Prevail: Celebrate the Journey” follows Alder’s story from her diagnosis through her sailing expedition, and finally to the creation of a nonprofit sailing organization that provides instruction and recreation to people of all ages and abilities, Sailability Greater Tampa Bay. Find her book on Amazon: <a href='https://www.amazon.com/Prevail-Celebrate-Journey-Alder-Allensworth/dp/1945812346'>https://www.amazon.com/Prevail-Celebrate-Journey-Alder-Allensworth/dp/1945812346</a>
                     </p>
                     <p className='segment__txt--phil clearfix'>
-                    <img className="phil-right" src={require("../images/_phil7.jpg")}/>
+                    <img className="phil-right" src={require("../images/_phil07.jpg")}/>
                     <strong>2018 Winner Ruth Brunson, “Ruthfulness: A Mother’s Guide to Accepting Autism.”</strong> A heart wrenching story of what it is really like to raise a child with Autism. Ruth leads us through the day to day struggles that many families are dealing with in this new era of children on the spectrum. It gives any family hope and laughter, that they too and overcome this disease. To be published soon.
                     </p>
                     <p className='segment__txt--phil clearfix'>

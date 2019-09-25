@@ -28,14 +28,6 @@ module.exports = {
         icon: `src/images/favicon.jpg`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-netlify-cms`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/static/assets`,
-        name: 'images',
-      },
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
