@@ -24,7 +24,7 @@ const AboutSegment = () => (
                     About
                   </Header>
                 </Label>
-                <Fade delay={700}>
+                <Fade>
                 <p className='segment__blurb segment__blurb--about'>
                   Tara Richter is the President of Richter Publishing. She specializes in helping business owners how to write their non-fiction story in 4 weeks & publish a book in order to become an expert in their industry.
                 </p>
@@ -37,7 +37,7 @@ const AboutSegment = () => (
         </Grid.Column>
         <Grid.Column className='phil__hero-img-col segment__awards' tablet={16} computer={8}>
           <Image fluid className='phil__hero-img' src={require("../../images/graduation.jpg")}/>
-          <Fade delay={500}>
+          <Fade>
           <div className='overlay-text--awards segment--table'>
             <Grid className='segment__items--centered segments__items--about' stackable>
               <Grid.Row>

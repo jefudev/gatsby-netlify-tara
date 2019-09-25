@@ -16,7 +16,7 @@ const PublishInParadiseSegment = () => (
     <Grid.Row textAlign='center'>
         <Grid.Column className='phil__hero-img-col' as='a' href='/publish-in-paradise' mobile={2} tablet={6} computer={8}  >
           <Image fluid className='phil__hero-img' src={require("../../images/paradise-hero.jpg")} />
-          <Fade delay={500}>
+          <Fade>
             <p className='overlay-text overlay-text--align-right'>
               Dreams of <br/>
               Paradise
@@ -31,7 +31,7 @@ const PublishInParadiseSegment = () => (
                     Publish In Paradise
                   </Header>
                 </Label>
-                <Fade delay={700}>
+                <Fade>
                 <p className='segment__blurb'>
                   Write your book in Asia! Explore the beautiful countries of Thailand, Vietnam and Indonesia with Tara.
                 </p>

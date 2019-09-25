@@ -16,7 +16,7 @@ const PhilanthropySegment = () => (
     <Grid.Row textAlign='center'>
         <Grid.Column className='phil__hero-img-col' as='a' href='/philanthropy' mobile={2} tablet={6} computer={8}>
           <Image fluid className='phil__hero-img' src={require("../../images/phil-hero.jpeg")} />
-          <Fade delay={500}>
+          <Fade>
             <p className='overlay-text overlay-text--align-right'>
               Giving <br/>
               Back
@@ -31,7 +31,7 @@ const PhilanthropySegment = () => (
                     Philanthropy
                   </Header>
                 </Label>
-                <Fade delay={700}>
+                <Fade>
                 <p className='segment__blurb'>
                   Tara always had a love for travel. In the summer of 2019 she spent four month in Asia volunteering at various non-profits. When she is not abroad, Richter also does numerous activities for the Tampa Bay community.
                 </p>

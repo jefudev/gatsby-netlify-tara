@@ -25,7 +25,7 @@ const MediaSegment = () => (
                     Media Appearances
                   </Header>
                 </Label>
-                <Fade delay={700}>
+                <Fade>
                 <Grid columns='equal' className="logo__grid" verticalAlign='middle' centered >
                   <Grid.Row>
                     <Grid.Column>
@@ -61,7 +61,7 @@ const MediaSegment = () => (
         </Grid.Column>
         <Grid.Column mobile={2} tablet={6} computer={8} className='phil__hero-img-col' as='a' href='/media'>
           <Image fluid className='phil__hero-img' src={require("../../images/news-hero.jpg")}/>
-          <Fade delay={500}>
+          <Fade>
           <div className='overlay-text'>
             In the <br/>
             News

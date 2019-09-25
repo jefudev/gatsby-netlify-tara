@@ -193,13 +193,13 @@ a.ui.label.segment__header--half {
 .about__segment .ui.celled.grid > .row > .column.phil__hero-img-col:after {
     opacity: .9;
 }
-.ui.celled.grid > .row > .column.phil__hero-img-col:hover:after{
+/* .ui.celled.grid > .row > .column.phil__hero-img-col:hover:after{
     opacity: 0;
-}
-.ui.celled.grid > .row > .column.phil__hero-img-col:hover .overlay-text{
+} */
+/* .ui.celled.grid > .row > .column.phil__hero-img-col:hover .overlay-text{
     color: #101357;
     mix-blend-mode: hard-light;
-}
+} */
 .phil__hero-img.ui.fluid.image {
     position: absolute;
     top: -100%;
@@ -305,6 +305,10 @@ a.ui.label.segment__header--half {
 .segment__txt {
     text-align: center;
 }
+.segment__txt--phil {
+    text-align: left;
+    /* text-justify: inter-word; */
+}
 .carousel .slide img.carousel-img {
     max-height: 700px;
     width: 100%;
@@ -322,6 +326,23 @@ a.ui.label.segment__header--half {
 .videoiFrame {
     width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;
 }
+.phil-left {
+    float: left;
+    max-width: 500px;
+    max-height: 500px;
+    padding: 15px 30px 15px 0;
+}
+.phil-right {
+    float: right;
+    max-width: 500px;
+    max-height: 500px;
+    padding: 15px 0 15px 30px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 /* ──────────────────────────────────────────────────────────────────────────────── */
 
 @media (min-width: 1200px) {
