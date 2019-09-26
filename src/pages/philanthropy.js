@@ -54,7 +54,7 @@ const Philanthropy = (props) => {
                     </p>
                     <p className='segment__txt--phil clearfix'>
                     <img className="phil-right" src={require("../images/_phil07.jpg")}/>
-                    <strong>2018 Winner Ruth Brunson, “Ruthfulness: A Mother’s Guide to Accepting Autism.”</strong> A heart wrenching story of what it is really like to raise a child with Autism. Ruth leads us through the day to day struggles that many families are dealing with in this new era of children on the spectrum. It gives any family hope and laughter, that they too and overcome this disease. To be published soon.
+                    <strong>2018 Winner Ruth Brunson, “Ruthfulness: A Mother’s Guide to Accepting Autism.”</strong> A heart wrenching story of what it is really like to raise a child with Autism. Ruth leads us through the day to day struggles that many families are dealing with in this new era of children on the spectrum. It gives any family hope and laughter, that they too and overcome this disease. Find her book on Amazon: <a href='https://www.amazon.com/dp/1945812745/'>https://www.amazon.com/dp/1945812745/</a>
                     </p>
                     <p className='segment__txt--phil clearfix'>
                     Ms. Richter also served as a Director of the Board for the non-profit Tampa Bay Technology Center located in

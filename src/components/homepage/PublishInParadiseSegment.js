@@ -18,7 +18,7 @@ const PublishInParadiseSegment = () => (
           <Image fluid className='phil__hero-img' src={require("../../images/paradise-hero.jpg")} />
           <Fade>
             <p className='overlay-text overlay-text--align-right'>
-              Dreams of <br/>
+              Publish In <br/>
               Paradise
             </p>
           </Fade>
