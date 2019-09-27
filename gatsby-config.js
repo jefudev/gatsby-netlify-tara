@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Tara Richter`,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    description: `Tara Richter is the President of Richter Publishing LLC. She specializes in helping business owners how to write their non-fiction story in four weeks & publish a book in order to become an expert in their industry. She has been featured on CNN, ABC, Daytime TV, FOX, SSN, Channel 10 News, USA TODAY, Beverly Hills Times and radio stations all over the world.`,
     author: `@jef-lau`,
   },
   plugins: [
